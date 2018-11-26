@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9005
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://mdb.dev/wp-admin/tools.php?page=wp-migrate-db-pro",
+            "webRoot": "${workspaceRoot}",
+            "sourceMapPathOverrides": {
+                "src/wp-migrate-db-pro/*": "${webRoot}/src/wp-migrate-db-pro/*",
+                "src/wp-migrate-db-pro-media-files/*": "${webRoot}/src/wp-migrate-db-pro-media-files/*",
+                "src/wp-migrate-db-pro-multisite-tools/*": "${webRoot}/src/wp-migrate-db-pro-multisite-tools/*"
+            }
+        }
+    ]
+}

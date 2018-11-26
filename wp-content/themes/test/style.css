@@ -1,0 +1,16 @@
+/*
+Theme Name: Test
+Author: Goran Tolmac
+Author URI:
+Version: 1.0
+*/
+
+.content {
+    margin: 0 auto;
+    float: right;
+    background: #ff0202;
+}
+
+.content-area {
+    margin-left: 50%;
+}
